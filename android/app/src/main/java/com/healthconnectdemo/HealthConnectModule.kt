@@ -44,11 +44,6 @@ class HealthConnectModule(reactContext: ReactApplicationContext) : ReactContextB
     return manager.insertRecords(records, promise)
   }
 
-
-    @ReactMethod
-    fun getHeartRates(options: ReadableMap, promise: Promise) {
-        return manager.readRecords(recordType, options, promise)
-    }
   @ReactMethod
    fun readRecords(recordType: String, options: ReadableMap, promise: Promise) {
     return manager.readRecords(recordType, options, promise)

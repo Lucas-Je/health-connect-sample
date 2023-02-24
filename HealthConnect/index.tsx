@@ -88,11 +88,6 @@ export function readRecords<T extends RecordType>(
   return HealthConnect.readRecords(recordType, options);
 }
 
-export function getHeartRates<T extends RecordType>(
-  options: ReadRecordsOptions,
-): Promise<RecordResult<T>[]> {
-  return HealthConnect.getHeartRates(options);
-}
 
 export function insertRecords(
   records: HealthConnectRecord[],
